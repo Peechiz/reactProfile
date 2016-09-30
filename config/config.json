@@ -2,21 +2,14 @@
   "development": {
     "username": "peechiz",
     "password": null,
-    "database": "database_development",
+    "database": "sandbox",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "peechiz",
     "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "production": {
-    "username": "peechiz",
-    "password": null,
-    "database": "database_production",
+    "database": "sandbox_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
