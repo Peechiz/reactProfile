@@ -1,4 +1,4 @@
-import Sequelize from 'sequelize';
+const Sequelize = require('sequelize');
 const db = process.env.DATABASE_URL || 'postgres://localhost/sandbox';
 const sequelize = new Sequelize(db);
-export default sequelize;
+module.exports = sequelize;
