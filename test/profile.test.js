@@ -7,6 +7,9 @@ describe('tests are ready', ()=>{
   it('checks to see if tests are working', ()=>{
     expect(1).to.equal(1)
   })
+  it('checks to see if env set correctly', ()=>{
+    expect(process.env.DB_CONFIG).to.equal('test')
+  })
 })
 
 describe('GET api/users', ()=>{
@@ -14,8 +17,15 @@ describe('GET api/users', ()=>{
     request.get('/api/users')
     .expect(200)
     .end((err,res) => {
-      console.log(res.body);
-      expect(res.body).to.deep.equal(5)
+      expect(res.body.length).to.equal(1)
+      done();
+    })
+  })
+  it('should get a single user', (done)=>{
+    request.get('/api/users/1')
+    .expect(200)
+    .end((err,res)=>{
+      expect(res.body.id).to.equal(1)
       done();
     })
   })
