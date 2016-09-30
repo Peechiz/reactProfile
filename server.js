@@ -11,3 +11,5 @@ const port = process.env.port || '9001'
 app.listen(port, ()=> {
   console.log(`Server up at: ${port}`);
 })
+
+module.exports = app;
