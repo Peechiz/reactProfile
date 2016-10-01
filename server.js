@@ -2,7 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
+const morgan = require('morgan')
 
+
+// app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
