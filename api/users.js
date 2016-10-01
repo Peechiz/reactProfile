@@ -29,7 +29,7 @@ router.put('/users/:id', (req,res) => {
     img: req.body.img,
     info: req.body.info
   }).then( result => {
-    res.sendStatus(200);
+    res.send(result)
   })
 })
 
