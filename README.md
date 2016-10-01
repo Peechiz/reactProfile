@@ -8,7 +8,6 @@ My first foray into React.js, the intention was to make a single, persistent edi
  - PostgreSQL
  - Sequelize.js
  - Express.js
- - SCSS
 
 ## Challenges
 
