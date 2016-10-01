@@ -12,5 +12,12 @@
     "database": "sandbox_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
+  },
+  "production": {
+    "username": "hmbmyckjfrjhjp",
+    "password": "b6U3YhuVa7GMRE6eGj1_ZFYOP6",
+    "database": "d6004fspaio44r",
+    "host": "ec2-50-17-212-238.compute-1.amazonaws.com",
+    "dialect": "postgres"
   }
 }
