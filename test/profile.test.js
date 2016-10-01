@@ -12,7 +12,7 @@ describe('tests are ready', ()=>{
   })
 })
 
-describe('GET api/users', ()=>{
+describe('api/users', ()=>{
   it('should get all users', (done)=>{
     request.get('/api/users')
     .expect(200)
@@ -27,6 +27,22 @@ describe('GET api/users', ()=>{
     .end((err,res)=>{
       expect(res.body.id).to.equal(1)
       done();
+    })
+  })
+  it('should edit a user', (done)=> {
+    request.put('/api/users/1')
+    .send({
+      name: 'jim'
+    })
+    .expect(200)
+    .end((err,res)=>{
+      expect(res.body).to.equal(false)
+      request.get('/api/users/1')
+      .expect(200)
+      .end((error,result)=>{
+        expect(result.body.name).to.equal('jim')
+        done();
+      })
     })
   })
 })
