@@ -1,3 +1,4 @@
+'use strict'
 const Sequelize = require('sequelize');
 
 if (process.env.DATABASE_URL) {
