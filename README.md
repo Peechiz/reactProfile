@@ -16,7 +16,7 @@ My first foray into React.js, the intention was to make a single, persistent edi
 
 I started the challenge, as one might, by binge-watching hours of Udemy tutorials on writing basic react/redux at 2.2x speed.  In these examples, webpack was used to create a bundle.js of all the different jsx files linked to from it's entry point.  This seemed great until I realized that in order for API to run concurrently on the same server, I was either going to:
 - A: have to permanently build the bundle.js (which I haven't yet figured out), or
-- B: use a CDN get react into my project
+- B: use a CDN to get react into my project
 
 Ultimately, due to the time contraints, I threw everything at the wall until something stuck, and that was the CDN.  This presented it's own headaches in the form of longer page loads, but ultimately the site was working, and that's what mattered for my quick-and-dirty MVP. In a real production environment, I would (hopefully) have had either more time or better resources for figuring out how to set up the environment properly.
 
